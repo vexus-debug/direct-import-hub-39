@@ -64,6 +64,7 @@ const plans = [
   { label: "Half-yearly", price: "₦30,000", period: "every 6 months", featured: true },
   { label: "Yearly", price: "₦60,000", period: "every 12 months" },
 ];
+const setupFeeNote = "*A one-time setup fee of ₦5,000 applies.";
 
 const included = [
 "Full clinical exam and refraction records",
