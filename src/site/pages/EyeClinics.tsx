@@ -64,6 +64,7 @@ const plans = [
   { label: "Half-yearly", price: "₦30,000", period: "every 6 months", featured: true },
   { label: "Yearly", price: "₦60,000", period: "every 12 months" },
 ];
+const setupFeeNote = "*A one-time setup fee of ₦5,000 applies.";
 
 const included = [
 "Full clinical exam and refraction records",
@@ -389,7 +390,7 @@ const EyeClinics = () => {
                   <div
                     className={p.featured ? "text-3xl font-bold" : "text-3xl font-bold text-primary"}
                   >
-                    {p.price}
+                    {p.price}<span className="align-top text-base">*</span>
                   </div>
                   <p className={p.featured ? "mt-1 text-xs opacity-60" : "mt-1 text-xs text-muted-foreground/60"}>
                     {p.period}
@@ -411,6 +412,7 @@ const EyeClinics = () => {
                 ))}
               </div>
             </div>
+            <p className="mx-auto mt-6 max-w-2xl text-left text-xs text-muted-foreground/70">{setupFeeNote}</p>
           </motion.section>
 
           {/* Final CTA */}
