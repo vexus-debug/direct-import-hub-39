@@ -412,6 +412,7 @@ const EyeClinics = () => {
                 ))}
               </div>
             </div>
+            <p className="mx-auto mt-6 max-w-2xl text-left text-xs text-muted-foreground/70">{setupFeeNote}</p>
           </motion.section>
 
           {/* Final CTA */}
