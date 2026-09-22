@@ -390,7 +390,7 @@ const EyeClinics = () => {
                   <div
                     className={p.featured ? "text-3xl font-bold" : "text-3xl font-bold text-primary"}
                   >
-                    {p.price}
+                    {p.price}<span className="align-top text-base">*</span>
                   </div>
                   <p className={p.featured ? "mt-1 text-xs opacity-60" : "mt-1 text-xs text-muted-foreground/60"}>
                     {p.period}
